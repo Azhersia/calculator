@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cylinder">
+        <div class="rectangle">
+            <div class="oval top-oval"></div>
+            <div class="oval bottom-oval"></div>
+        </div>
+    </div>
+
+    <div class="box">
+
+        <header>
+            <div class="field">
+                <div class="field2">
+                    <h1 id="display"></h1>
+                </div>
+            </div>
+        </header>
+
+        <footer>
+            <div class="buttons">
+                <button id="1" onclick="updateDisplay('1')">1</button>
+                <button id="2" onclick="updateDisplay('2')">2</button>
+                <button id="3" onclick="updateDisplay('3')">3</button>
+                <button id="plus" onclick="updateDisplay('+')">+</button>
+                <button id="4" onclick="updateDisplay('4')">4</button>
+                <button id="5" onclick="updateDisplay('5')">5</button>
+                <button id="6" onclick="updateDisplay('6')">6</button>
+                <button id="minus" onclick="updateDisplay('-')">-</button>
+                <button id="7" onclick="updateDisplay('7')">7</button>
+                <button id="8" onclick="updateDisplay('8')">8</button>
+                <button id="9" onclick="updateDisplay('9')">9</button>
+                <button id="multi" onclick="updateDisplay('*')">x</button>
+
+                <div class="bottom">
+                    <button id="0" onclick="updateDisplay('0')">0</button>
+                    <button id="clear" onclick="clearDisplay('')">C</button>
+                    <button id="equal" onclick="equalDisplay('')">=</button>
+                </div>
+
+
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="java.js"></script>
+</body>
+
+</html>
